@@ -10,7 +10,10 @@ const { ctrlWrapper } = require("../utils");
 
 const register = async (req, res, next) => {
   const { email, password } = req.body;
+  console.log(req.body);
   const user = await User.findOne({ email });
+  console.log(user);
+
   if (user) {
     throw HttpError(409, "User already exists");
   }
