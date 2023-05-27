@@ -1,6 +1,6 @@
 const express = require("express");
 
-const {getAll, getById, add, updateById, updateFavorite, deleteById} = require("../controlers/contacts-controlers");
+const { getAll, getById, add, updateById, updateFavorite, deleteById } = require("../controlers/contacts-controlers");
 
 const { validateBody, isValidId } = require("../middlewares");
 
