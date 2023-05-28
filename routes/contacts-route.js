@@ -1,8 +1,8 @@
 const express = require("express");
 
 const { getAll, getById, add, updateById, updateFavorite, deleteById } = require("../controlers/contacts-controlers");
-
-const { validateBody, isValidId } = require("../middlewares");
+const { isValidId } = require("../middlewares");
+const { validateBody } = require("../utils");
 
 const { schemas } = require("../validate-schema/schema");
 
