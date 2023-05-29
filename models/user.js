@@ -23,7 +23,7 @@ const userSchema = new Schema(
     token: {
       type: String,
       required: true,
-      default: " ",
+      default: "",
     },
   },
   { versionKey: false, timestamps: true }
