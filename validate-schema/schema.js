@@ -23,8 +23,11 @@ const loginSchema = Joi.object({
   email: Joi.string().required().pattern(emailRegexp),
   password: Joi.string().required(),
 });
-
+const verifySchema = Joi.object({
+  email: Joi.string().required().pattern(emailRegexp),
+});
 const schemas = {
+  verifySchema,
   addSchema,
   registerSchema,
   updateFavoriteSchema,
